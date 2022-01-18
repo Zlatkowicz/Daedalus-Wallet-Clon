@@ -157,42 +157,34 @@ main .container {
     align-items: center;
     color: var(--color);
     text-align: center;
-    margin-top: 5em;
 }
-main .container .welcomeContainer .welcomeContainerTittle {
-    width: 80%;
+main .container .welcomeContainerTittle {
     font-size: 2.4em;
-    margin: auto;
     letter-spacing: 2px;
     font-weight: 200;
 }
-main .container .welcomeContainer .welcomeContainerSubTittle {
-    opacity: .5;
-    font-weight: 200;
-    margin: 1em 0;
-}
-main .container .welcomeContainer  button {
+main .container button {
     padding: .6em 3em;
     margin: 1em;
     border-radius: .5em;
     border: none;
     background-color: #2cbb69;
 }
-main .container .welcomeContainer  button:hover {
+main .container button:hover {
     cursor: pointer;
     transition: 1.2s;
     box-shadow: 0 0 5em 1px rgba(255, 255, 255, 0.164);
 }
-main .container .welcomeContainer  .buttonDownload:hover {
+main .container .buttonDownload:hover {
     background-color: #2a2a49;
 }
-main .container .welcomeContainer .getSupport {
+main .container .getSupport {
     background-color: #2a2a49;
 }
-main .container .welcomeContainer .getSupport:hover {
+main .container .getSupport:hover {
     background-color: #2cbb69;
 }
-main .container .welcomeContainer button a {
+main .container button a {
     color: var(--color);
     font-size: 1.2em;
     font-weight: bold;
@@ -259,7 +251,6 @@ main .gridContainer {
     padding: 2em;
     width: 65%;
     color: var(--color);
-    opacity: .5;
     margin: auto;
     background-image: url(img/rune.svg);
     background-size: cover;
