@@ -44,7 +44,7 @@ header nav .headerContainer .daedalusIcon {
     height: 192px;
     width: 110px;
 }
-/* Animacion */
+/* Animacion Header */
 header nav .headerContainer .githubIcon {
     margin-top: 2em;
     animation: gitIcon 4s infinite;
@@ -70,7 +70,7 @@ header nav .headerContainer .githubIcon {
         0 0 20em .1em rgba(57, 241, 41, 0.993);
     }
 }
-/* Animacion */
+/* Animacion Header */
 /* Media Queries */
 @media screen and (max-width: 530px){
     header nav .headerContainer .headerContainerList ul {
@@ -331,7 +331,7 @@ footer .footerContainer .footerContainerTwoLine  {
     }
 }
 /* FOOTER */
-/* TEAM */
+/* TEAM PAGE */
 .container-team {
     display: flex;
     justify-content: center;
@@ -360,11 +360,14 @@ footer .footerContainer .footerContainerTwoLine  {
     opacity: .7;
     margin: 1em 0;
 }
+/* TEAM PAGE MEDIA QUERIES */
 @media screen and (max-width: 800px){
     .container-team {
         width: 100%;
     }
 }
+/* TEAM PAGE MEDIA QUERIES */
+/* TEAM PAGE DISCLAIMER */
 .containerTeamDisclaimer {
     border-top: 2px solid #2cbb69;
     border-bottom: 2px solid #2cbb69;
@@ -373,4 +376,5 @@ footer .footerContainer .footerContainerTwoLine  {
 .containerTeamDisclaimer .containerTeamParagraph {
     margin-bottom: 2em;
 }
+/* TEAM PAGE DISCLAIMER */
 /* TEAM */
