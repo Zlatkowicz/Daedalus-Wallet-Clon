@@ -1,20 +1,11 @@
+/* Tipografias y Root */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-/* Prefijos Y Root */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 :root {
     --font-family: 'Montserrat', sans-serif;
     --color: #fff;
     --display: flex;
 }
-
-/* Prefijos Y Root */
-
+/* Tipografias y Root */
 body {
     font-family: var(--font-family);
     background-color: #121326;
@@ -25,9 +16,7 @@ a {
 ul {
     list-style: none;
 }
-
 /* HEADER */
-
 header {
     width: 100%;
 }
@@ -55,7 +44,6 @@ header nav .headerContainer .daedalusIcon {
     width: 110px;
 }
 /* Animacion */
-
 header nav .headerContainer .githubIcon {
     margin-top: 2em;
     animation: gitIcon 4s infinite;
@@ -81,12 +69,8 @@ header nav .headerContainer .githubIcon {
         0 0 20em .1em rgba(57, 241, 41, 0.993);
     }
 }
-
 /* Animacion */
-
-
 /* Media Queries */
-
 @media screen and (max-width: 530px){
     header nav .headerContainer .headerContainerList ul {
         display: block;
@@ -100,11 +84,8 @@ header nav .headerContainer .githubIcon {
         border-top: 1px solid rgba(255, 255, 255, 0.151);
     }
 }
-
 /* Media Queries */
-
 /* Header List */
-
 header nav .headerContainerList {
     display: var(--display);
     margin-top: 2em;
@@ -141,15 +122,10 @@ header nav .headerContainerList ul li a::after {
     color: rgb(99, 255, 85);
     margin: 0 .2em;
 }
-
 /* Header List */
-
 /* HEADER */
-
 /* MAIN */
-
 /* WELCOME CONTAINER */
-
 main .container {
     display: var(--display);
     flex-direction: column;
@@ -222,9 +198,7 @@ main .secundaryContainer img {
     }
 }
 /* WELCOME CONTAINER */
-
 /* Wallet Tittle Container */
-
 main .walletTittleContainer {
     display: var(--display);
     justify-content: center;
@@ -237,11 +211,8 @@ main .walletTittleContainer {
     color: var(--color);
     font-size: 2.2em;
 }
-
 /* Wallet Tittle Container */
-
 /* Grid */
-
 main .gridContainer {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -252,7 +223,7 @@ main .gridContainer {
     width: 65%;
     color: var(--color);
     margin: auto;
-    background-image: url(img/rune.svg);
+    background-image: url(../img/rune.svg);
     background-size: cover;
     background-position: center;
     gap: 30px 20px;
@@ -297,9 +268,7 @@ main .gridContainer .gridItem .gridItemContent .GridItemContentText {
     }
 }
 /* Grid */
-
 /* MAIN */
-
 /* FOOTER */
 footer {
     margin-top: 10em;
