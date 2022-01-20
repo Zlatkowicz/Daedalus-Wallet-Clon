@@ -300,14 +300,17 @@ footer .footerContainer .footerContainerTwoLine  {
     display: var(--display);
     justify-content: space-evenly;
 }
-footer .footerContainer .footerContainerTwoLine .fa-twitter, 
+.fa-twitter, 
+.fa-linkedin,
 .fa-reddit, 
 .fa-instagram,
 .fa-github {
     color: #2cbb69;
     margin: 0 1em;
     font-size: 1.2em;
-}footer .footerContainer .footerContainerTwoLine .fa-twitter:hover, 
+}
+.fa-twitter:hover,
+.fa-linkedin:hover, 
 .fa-reddit:hover, 
 .fa-instagram:hover,
 .fa-github:hover {
@@ -328,3 +331,46 @@ footer .footerContainer .footerContainerTwoLine .fa-twitter,
     }
 }
 /* FOOTER */
+/* TEAM */
+.container-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+    width: 50%;
+}
+.container-team .containerTeamRow {
+    margin-top: 4em;
+}
+.container-team img {
+    height: 150px;
+    width: 150px;
+    outline: 2px solid #2cbb69;
+    border-radius: 50%;
+}
+.container-team .containerTeamTittle {
+    color: #2cbb69;
+}
+.container-team .containerTeamSpan {
+    display: block;
+    margin: 1em 0;
+}
+.container-team .containerTeamParagraph {
+    opacity: .7;
+    margin: 1em 0;
+}
+@media screen and (max-width: 800px){
+    .container-team {
+        width: 100%;
+    }
+}
+.containerTeamDisclaimer {
+    border-top: 2px solid #2cbb69;
+    border-bottom: 2px solid #2cbb69;
+    border-radius: 0em 2em / 0em 2em;
+}
+.containerTeamDisclaimer .containerTeamParagraph {
+    margin-bottom: 2em;
+}
+/* TEAM */
