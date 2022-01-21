@@ -7,10 +7,18 @@
     --align: center;
 }
 /* Tipografias y Root */
-/* Prefijos */
+/* Prefijos y Selection */
 body {
     font-family: var(--font-family);
     background-color: #121326;
+}
+p::selection {
+    background-color: #2cbb69;
+    color: #fff;
+}
+h5::first-letter {
+    color: #2cbb69;
+    text-shadow: 0 0 1em #05ff72;
 }
 a {
     text-decoration: none;
@@ -18,7 +26,7 @@ a {
 ul {
     list-style: none;
 }
-/* Prefijos */
+/* Prefijos y Selection */
 /* HEADER */
 header {
     width: 100%;
