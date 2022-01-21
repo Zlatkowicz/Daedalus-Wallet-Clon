@@ -7,6 +7,7 @@
     --align: center;
 }
 /* Tipografias y Root */
+/* Prefijos */
 body {
     font-family: var(--font-family);
     background-color: #121326;
@@ -17,10 +18,12 @@ a {
 ul {
     list-style: none;
 }
+/* Prefijos */
 /* HEADER */
 header {
     width: 100%;
 }
+/* NavBar */
 header nav {
     display: var(--display);
     justify-content: var(--align);
@@ -50,6 +53,8 @@ header nav .headerContainer .githubIcon {
     animation: gitIcon 4s infinite;
     border-radius: 100%;
 }
+/* NavBar */
+/* NavBar Animation */
 @keyframes gitIcon {
     0% {
         transform: rotate(0deg) translateX(0px);
@@ -70,8 +75,8 @@ header nav .headerContainer .githubIcon {
         0 0 20em .1em rgba(57, 241, 41, 0.993);
     }
 }
-/* Animacion Header */
-/* Media Queries */
+/* NavBar Animation */
+/* Header Media Queries */
 @media screen and (max-width: 530px){
     header nav .headerContainer .headerContainerList ul {
         display: block;
@@ -85,7 +90,7 @@ header nav .headerContainer .githubIcon {
         border-top: 1px solid rgba(255, 255, 255, 0.151);
     }
 }
-/* Media Queries */
+/* Header Media Queries */
 /* Header List */
 header nav .headerContainerList {
     display: var(--display);
@@ -127,7 +132,7 @@ header nav .headerContainerList ul li a::after {
 /* HEADER */
 /* MAIN */
 /* WELCOME CONTAINER */
-main .container {
+main .contenedor {
     display: var(--display);
     flex-direction: column;
     justify-content: var(--align);
@@ -135,33 +140,33 @@ main .container {
     color: var(--color);
     text-align: var(--align);
 }
-main .container .welcomeContainerTittle {
+main .contenedor .welcomeContainerTittle {
     font-size: 2.4em;
     letter-spacing: 2px;
     font-weight: 200;
 }
-main .container button {
+main .contenedor .btn{
     padding: .6em 3em;
     margin: 1em;
     border-radius: .5em;
     border: none;
     background-color: #2cbb69;
 }
-main .container button:hover {
+main .contenedor .btn:hover {
     cursor: pointer;
     transition: 1.2s;
     box-shadow: 0 0 5em 1px rgba(255, 255, 255, 0.164);
 }
-main .container .buttonDownload:hover {
+main .contenedor .buttonDownload:hover {
     background-color: #2a2a49;
 }
-main .container .getSupport {
+main .contenedor .getSupport {
     background-color: #2a2a49;
 }
-main .container .getSupport:hover {
+main .contenedor .getSupport:hover {
     background-color: #2cbb69;
 }
-main .container button a {
+main .contenedor .btn {
     color: var(--color);
     font-size: 1.2em;
     font-weight: bold;
@@ -245,6 +250,7 @@ main .gridContainer .gridItem .gridItemContent .gridItemContentTittle {
 main .gridContainer .gridItem .gridItemContent .GridItemContentText {
     width: 80%;
 }
+/* Grid Media Queries */
 @media screen and (max-width: 1200px){
     main .gridContainer {
         grid-template-columns: 100%;
@@ -268,6 +274,7 @@ main .gridContainer .gridItem .gridItemContent .GridItemContentText {
         width: 100%;
     }
 }
+/* Grid Media Queries */
 /* Grid */
 /* MAIN */
 /* FOOTER */
@@ -300,6 +307,7 @@ footer .footerContainer .footerContainerTwoLine  {
     display: var(--display);
     justify-content: space-evenly;
 }
+/* Footer Icons */
 .fa-twitter, 
 .fa-linkedin,
 .fa-reddit, 
@@ -320,6 +328,8 @@ footer .footerContainer .footerContainerTwoLine  {
         0 0 16em .1em rgb(99, 255, 85),
         0 0 20em .1em rgba(57, 241, 41, 0.993);
 }
+/* Footer Icons */
+/* Footer Media Queries */
 @media screen and (max-width: 900px){
     footer .footerContainer {
         display: var(--display);
@@ -330,6 +340,7 @@ footer .footerContainer .footerContainerTwoLine  {
         margin: 2em 0;
     }
 }
+/* Footer Media Queries */
 /* FOOTER */
 /* TEAM PAGE */
 .container-team {
