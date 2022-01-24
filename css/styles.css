@@ -56,7 +56,7 @@ header nav .headerContainer .daedalusIcon {
     width: 110px;
 }
 /* Animacion Header */
-header nav .headerContainer .githubIcon {
+header nav .headerContainer .cardanoIcon {
     margin-top: 2em;
     animation: gitIcon 4s infinite;
     border-radius: 100%;
