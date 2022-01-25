@@ -14,6 +14,8 @@ footer {
         align-items: $align;
         color: $color;
         justify-content: space-between;
+
+        /* Footer Container Media Queries */
         @media screen and (max-width: 900px) {
             display: var(--display);
             justify-content: var(--align);
