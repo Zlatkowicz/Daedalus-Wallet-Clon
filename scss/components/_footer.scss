@@ -1,0 +1,57 @@
+/* Import Variables */
+@import '../base/variables';
+/* Footer */
+footer {
+    margin-top: 10em;
+    display: $display;
+    align-items: $align;
+    justify-content: $align;
+    .footerContainer {
+        display: $display;
+        border-top: 1px solid $color;
+        width: 65%;
+        padding: 1em;
+        align-items: $align;
+        color: $color;
+        justify-content: space-between;
+        @media screen and (max-width: 900px) {
+            display: var(--display);
+            justify-content: var(--align);
+            flex-direction: column;
+        }
+        .footerContainerFirstLine {
+            display: $display;
+            align-items: $align;
+            justify-content: $align;
+        }
+        .footerTittle {
+            font-size: 1.2em;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+        .footerContainerTwoLine  {
+            display: $display;
+            justify-content: space-evenly;
+            @media screen and (max-width: 900px) {
+                margin: 2em 0;
+            }
+        }
+    }
+}
+/* Icons */
+.fa-twitter, 
+.fa-linkedin,
+.fa-reddit, 
+.fa-instagram,
+.fa-github {
+    color: #2cbb69;
+    margin: 0 1em;
+    font-size: 1.2em;
+    &:hover{
+        cursor: pointer;
+        transition: 1.2s;
+        box-shadow: 0 0 2em .1em rgba(154, 255, 144, 0.377),
+            0 0 16em .1em rgb(99, 255, 85),
+            0 0 20em .1em rgba(57, 241, 41, 0.993);
+    }
+}

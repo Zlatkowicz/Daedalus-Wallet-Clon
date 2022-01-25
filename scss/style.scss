@@ -1,0 +1,28 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* Import Variables */
+@import 'base/_variables';
+/* prefixes and selection */
+body {
+    font-family: $font-family;
+    background-color: #121326;
+}
+p::selection {
+    background-color: #2cbb69;
+    color: #fff;
+}
+h5::first-letter {
+    color: #2cbb69;
+    text-shadow: 0 0 1em #05ff72;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* Components */
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';
+@import 'components/team';

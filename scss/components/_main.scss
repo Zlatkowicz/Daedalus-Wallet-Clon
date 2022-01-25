@@ -1,0 +1,141 @@
+/* Import Variables */
+@import '../base/variables';
+/* Main */
+main {
+    .contenedor {
+        display: $display;
+        flex-direction: column;
+        justify-content: $align;
+        align-items: $align;
+        color: $color;
+        text-align: $align;
+        .welcomeContainerTittle {
+            font-size: 2.4em;
+            letter-spacing: 2px;
+            font-weight: 200;
+        }
+        .btn{
+            padding: .6em 3em;
+            margin: 1em;
+            border-radius: .5em;
+            border: none;
+            background-color: #2cbb69;
+            color: $color;
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            &:hover {
+                cursor: pointer;
+                transition: 1.2s;
+                box-shadow: 0 0 5em 1px rgba(255, 255, 255, 0.164);
+            }
+        }
+        .buttonDownload:hover {
+            background-color: #2a2a49;
+        }
+        .getSupport {
+            background-color: #2a2a49;
+            &:hover {
+                background-color: #2cbb69;
+            }
+        }
+    }
+    .secundaryContainer {
+        display:$display;
+        margin-top: 3em;
+        position: relative;
+        width: 65%;
+        padding: 3.5em;
+        background-color: #2b2b3b;
+        justify-content: $align;
+        flex-direction: column;
+        align-items: $align;
+        .secundaryContainerTittle {
+            font-size: 1.8em;
+            font-weight: 200;
+            margin-bottom: 1em;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -8px;
+            box-shadow: 0 0 2em .1em rgba(63, 255, 46, 0.377),
+                0 0 16em .1em rgb(99, 255, 85),
+                0 0 20em .1em rgba(57, 241, 41, 0.993);
+            border-radius: 100%;
+        }
+        @media screen and (max-width: 530px){
+            width: 90%;
+        }
+    }
+    .walletTittleContainer {
+        display: $display;
+        justify-content: $align;
+        align-items: $align;
+        font-weight: 200;
+        opacity: .5;
+        margin: 3em;
+        text-align: $align;
+        letter-spacing: 1px;
+        color: $color;
+        font-size: 2.2em;
+    }
+    /* Grid */
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: $align;
+        grid-template-rows: auto auto;
+        text-align: left;
+        padding: 2em;
+        width: 65%;
+        color: $color;
+        margin: auto;
+        background-image: url(../../img/rune.svg);
+        background-size: cover;
+        background-position: $align;
+        gap: 30px 20px; 
+        .gridItem {
+            .gridItemContent {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    top: 1em;
+                    @media screen and (max-width: 1200px) {
+                        display: none;
+                    }
+                }
+                .gridItemContentTittle {
+                    display: inline-block;
+                    font-size: 1em;
+                    width: 70%;
+                    position: relative;
+                    margin: 2em;
+                    @media screen and (max-width: 1200px) {
+                        margin: 1em auto;
+                    }
+                }
+                .GridItemContentText {
+                    width: 80%;
+                    @media screen and (max-width: 1200px) {
+                        text-align: $align;
+                        margin: auto;
+                    }
+                    @media screen and (max-width: 400px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        /* Grid Media Queries */
+        @media screen and (max-width:1200px){
+            grid-template-columns: 100%;
+            text-align: $align;
+            border-top: 1px solid $color;
+            border-bottom: 1px solid $color;
+        }
+    }
+}
+/* Main */

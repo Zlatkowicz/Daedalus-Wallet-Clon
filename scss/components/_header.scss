@@ -1,0 +1,108 @@
+/* Import Variables */
+@import '../base/variables';
+/* Header */
+header {
+    width: 100%;
+    /* NavBar */
+    nav {
+        display: $display;
+        justify-content: $align;
+        .headerContainer {
+            display: $display;
+            flex-direction: column;
+            align-items: $align;
+            text-align: $align;
+            .headerContainerTittle {
+                color: $color;
+                font-weight: 100;
+                font-size: 1.3em;
+                letter-spacing: 2px;
+                span {
+                    font-weight: bold
+                }
+            }
+            .daedalusIcon {
+                height: 192px;
+                width: 110px;
+            }
+            .cardanoIcon {
+                margin-top: 2em;
+                animation: gitIcon 4s infinite;
+                border-radius: 100%;
+            }
+            @media screen and (max-width: 530px){
+                .headerContainerList ul {
+                    display: block;
+                }
+                .headerContainerList ul li {
+                    position: relative;
+                    top: 2em;
+                    width: 100%;
+                    padding: 1em 0em;
+                    display: inline-block;
+                    border-top: 1px solid rgba(255, 255, 255, 0.151);
+                }
+            }
+        }
+
+        /* Header Container List */
+        .headerContainerList {
+            display: $display;
+            margin-top: 2em;
+            justify-content: $align;
+            ul {
+                justify-content: $align;
+                align-items: $align;
+                flex-direction: row;
+                display: $display;
+                li:hover {
+                    box-shadow: 0 0 2em .1em #10101d,
+                        0 0 4em .1em #2a2a3d,
+                        0 0 5em .1em #161622;
+                    transition: .5s;
+                    text-shadow: 0 0 1em rgb(99, 255, 85);
+                    transform: scaleY(1.2);
+                }
+                li a {
+                    color: $color;
+                    margin: 1em;
+                    font-size: .8em;
+                    letter-spacing: .1em;
+                    font-weight: bolder;
+                    &::before {
+                        content: ' - ';
+                        color: rgb(99, 255, 85);
+                        margin: 0 .2em;
+                    }
+                    &::after {
+                        content: ' - ';
+                        color: rgb(99, 255, 85);
+                        margin: 0 .2em;
+                    }
+                }
+            }
+        }
+        /* Header Container List End */
+    }
+    /* Animation */
+    @keyframes gitIcon {
+        0% {
+            transform: rotate(0deg) translateX(0px);
+            box-shadow: 0 0 2em .1em rgba(99, 255, 85, 0.158),
+            0 0 10em .1em rgba(99, 255, 85, 0.267),
+            0 0 14em .1em rgba(99, 255, 85, 0.541);
+        }
+        50% {
+            transform: rotate(360deg) translateX(80px);
+            box-shadow: 0 0 2em .1em rgba(99, 255, 85, 0.158),
+            0 0 12em .1em rgba(99, 255, 85, 0.582),
+            0 0 16em .1em rgba(99, 255, 85, 0.781);
+        }
+        100% {
+            transform: rotate(-360deg) translateX(0px);
+            box-shadow: 0 0 2em .1em rgba(154, 255, 144, 0.377),
+            0 0 16em .1em rgb(99, 255, 85),
+            0 0 20em .1em rgba(57, 241, 41, 0.993);
+        }
+    }
+}

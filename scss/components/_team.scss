@@ -1,0 +1,42 @@
+/* Import Variables */
+@import '../base/variables';
+/* Team Page */
+.container-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+    width: 50%;
+    .containerTeamRow {
+        margin-top: 4em;
+        img {
+            height: 150px;
+            width: 150px;
+            outline: 2px solid #2cbb69;
+            border-radius: 50%;
+        }
+        .containerTeamTittle {
+            color: #2cbb69;
+        }
+        .containerTeamSpan {
+            display: block;
+            margin: 1em 0;
+        }
+        .containerTeamParagraph {
+            opacity: .7;
+            margin: 1em 0;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+    .containerTeamDisclaimer {
+        border-top: 2px solid #2cbb69;
+        border-bottom: 2px solid #2cbb69;
+        border-radius: 0em 2em / 0em 2em;
+        .containerTeamParagraph {
+            margin-bottom: 2em;
+        }
+    }
+}
