@@ -111,6 +111,10 @@ header nav .headerContainerList ul li:hover {
   transition: 0.5s;
   text-shadow: 0 0 1em #63ff55;
   transform: scaleY(1.2);
+  -webkit-transform: scaleY(1.2);
+  -o-transform: scaleY(1.2);
+  -moz-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
 }
 header nav .headerContainerList ul li a {
   color: #fff;
@@ -132,14 +136,26 @@ header nav .headerContainerList ul li a::after {
 @keyframes adaIcon {
   0% {
     transform: rotate(0deg) translateX(0px);
+    -webkit-transform: rotate(0deg) translateX(0px);
+    -o-transform: rotate(0deg) translateX(0px);
+    -moz-transform: rotate(0deg) translateX(0px);
+    -ms-transform: rotate(0deg) translateX(0px);
     box-shadow: 0 0 2em 0.1em rgba(99, 255, 85, 0.158), 0 0 10em 0.1em rgba(99, 255, 85, 0.267), 0 0 14em 0.1em rgba(99, 255, 85, 0.541);
   }
   50% {
     transform: rotate(360deg) translateX(80px);
+    -webkit-transform: rotate(360deg) translateX(80px);
+    -o-transform: rotate(360deg) translateX(80px);
+    -moz-transform: rotate(360deg) translateX(80px);
+    -ms-transform: rotate(360deg) translateX(80px);
     box-shadow: 0 0 2em 0.1em rgba(99, 255, 85, 0.158), 0 0 12em 0.1em rgba(99, 255, 85, 0.582), 0 0 16em 0.1em rgba(99, 255, 85, 0.781);
   }
   100% {
     transform: rotate(-360deg) translateX(0px);
+    -webkit-transform: rotate(-360deg) translateX(0px);
+    -o-transform: rotate(-360deg) translateX(0px);
+    -moz-transform: rotate(-360deg) translateX(0px);
+    -ms-transform: rotate(-360deg) translateX(0px);
     box-shadow: 0 0 2em 0.1em rgba(154, 255, 144, 0.377), 0 0 16em 0.1em #63ff55, 0 0 20em 0.1em rgba(57, 241, 41, 0.993);
   }
 }

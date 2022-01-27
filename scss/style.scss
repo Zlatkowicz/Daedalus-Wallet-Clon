@@ -8,11 +8,11 @@ body {
     background-color: #121326;
 }
 p::selection {
-    background-color: #2cbb69;
+    background-color: map-get($bg, bg-color-primary);
     color: #fff;
 }
 h5::first-letter {
-    color: #2cbb69;
+    color: map-get($bg, bg-color-primary);
     text-shadow: 0 0 1em #05ff72;
 }
 a {
