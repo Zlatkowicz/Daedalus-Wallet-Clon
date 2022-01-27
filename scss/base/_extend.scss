@@ -1,0 +1,30 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%btn {
+    padding: 0.6em 3em;
+    margin: 1em;
+    border-radius: 0.5em;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+%icon {
+    color: #2cbb69;
+    margin: 0 1em;
+    font-size: 1.2em;
+    &:hover{
+        cursor: pointer;
+        transition: 1.2s;
+        box-shadow: 0 0 2em .1em rgba(154, 255, 144, 0.377),
+            0 0 16em .1em rgb(99, 255, 85),
+            0 0 20em .1em rgba(57, 241, 41, 0.993);
+    }
+}
+@mixin transform ($value){
+    transform: $value;
+}

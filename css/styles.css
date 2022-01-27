@@ -27,6 +27,34 @@ ul {
 
 /* Components */
 /* Import Variables */
+.container-team, footer .footerContainer .footerContainerTwoLine, footer .footerContainer .footerContainerFirstLine, footer .footerContainer, footer, .walletTittleContainer, .secundaryContainer, .contenedor, header nav .headerContainerList ul, header nav .headerContainerList, header nav .headerContainer, header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .btn {
+  padding: 0.6em 3em;
+  margin: 1em;
+  border-radius: 0.5em;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.fa-twitter, .fa-linkedin, .fa-reddit, .fa-instagram, .fa-github {
+  color: #2cbb69;
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+.fa-twitter:hover, .fa-linkedin:hover, .fa-reddit:hover, .fa-instagram:hover, .fa-github:hover {
+  cursor: pointer;
+  transition: 1.2s;
+  box-shadow: 0 0 2em 0.1em rgba(154, 255, 144, 0.377), 0 0 16em 0.1em #63ff55, 0 0 20em 0.1em rgba(57, 241, 41, 0.993);
+}
+
 /* Header */
 header {
   width: 100%;
@@ -34,15 +62,11 @@ header {
   /* Animation */
 }
 header nav {
-  display: flex;
-  justify-content: center;
   /* Header Container List */
   /* Header Container List End */
 }
 header nav .headerContainer {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 header nav .headerContainer .headerContainerTittle {
@@ -60,7 +84,7 @@ header nav .headerContainer .daedalusIcon {
 }
 header nav .headerContainer .cardanoIcon {
   margin-top: 2em;
-  animation: gitIcon 4s infinite;
+  animation: adaIcon 4s infinite;
   border-radius: 100%;
 }
 @media screen and (max-width: 530px) {
@@ -77,15 +101,10 @@ header nav .headerContainer .cardanoIcon {
   }
 }
 header nav .headerContainerList {
-  display: flex;
   margin-top: 2em;
-  justify-content: center;
 }
 header nav .headerContainerList ul {
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  display: flex;
 }
 header nav .headerContainerList ul li:hover {
   box-shadow: 0 0 2em 0.1em #10101d, 0 0 4em 0.1em #2a2a3d, 0 0 5em 0.1em #161622;
@@ -110,7 +129,7 @@ header nav .headerContainerList ul li a::after {
   color: #63ff55;
   margin: 0 0.2em;
 }
-@keyframes gitIcon {
+@keyframes adaIcon {
   0% {
     transform: rotate(0deg) translateX(0px);
     box-shadow: 0 0 2em 0.1em rgba(99, 255, 85, 0.158), 0 0 10em 0.1em rgba(99, 255, 85, 0.267), 0 0 14em 0.1em rgba(99, 255, 85, 0.541);
@@ -126,65 +145,77 @@ header nav .headerContainerList ul li a::after {
 }
 
 /* Import Variables */
-/* Main */
-main {
-  /* Grid */
-}
-main .contenedor {
+.container-team, footer .footerContainer .footerContainerTwoLine, footer .footerContainer .footerContainerFirstLine, footer .footerContainer, footer, .walletTittleContainer, .secundaryContainer, .contenedor, header nav, header nav .headerContainer, header nav .headerContainerList, header nav .headerContainerList ul {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  text-align: center;
 }
-main .contenedor .welcomeContainerTittle {
-  font-size: 2.4em;
-  letter-spacing: 2px;
-  font-weight: 200;
-}
-main .contenedor .btn {
+
+.contenedor .btn {
   padding: 0.6em 3em;
   margin: 1em;
   border-radius: 0.5em;
   border: none;
-  background-color: #2cbb69;
   color: #fff;
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 1px;
 }
-main .contenedor .btn:hover {
+
+.fa-twitter, .fa-linkedin, .fa-reddit, .fa-instagram, .fa-github {
+  color: #2cbb69;
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+.fa-twitter:hover, .fa-linkedin:hover, .fa-reddit:hover, .fa-instagram:hover, .fa-github:hover {
+  cursor: pointer;
+  transition: 1.2s;
+  box-shadow: 0 0 2em 0.1em rgba(154, 255, 144, 0.377), 0 0 16em 0.1em #63ff55, 0 0 20em 0.1em rgba(57, 241, 41, 0.993);
+}
+
+/* Main */
+.contenedor {
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+}
+.contenedor .welcomeContainerTittle {
+  font-size: 2.4em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.contenedor .btn {
+  background-color: #2cbb69;
+}
+.contenedor .btn:hover {
   cursor: pointer;
   transition: 1.2s;
   box-shadow: 0 0 5em 1px rgba(255, 255, 255, 0.164);
 }
-main .contenedor .buttonDownload:hover {
+.contenedor .buttonDownload:hover {
   background-color: #2a2a49;
 }
-main .contenedor .getSupport {
+.contenedor .getSupport {
   background-color: #2a2a49;
 }
-main .contenedor .getSupport:hover {
+.contenedor .getSupport:hover {
   background-color: #2cbb69;
 }
-main .secundaryContainer {
-  display: flex;
+
+.secundaryContainer {
   margin-top: 3em;
   position: relative;
   width: 65%;
   padding: 3.5em;
   background-color: #2b2b3b;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
-main .secundaryContainer .secundaryContainerTittle {
+.secundaryContainer .secundaryContainerTittle {
   font-size: 1.8em;
   font-weight: 200;
   margin-bottom: 1em;
 }
-main .secundaryContainer img {
+.secundaryContainer img {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -193,14 +224,12 @@ main .secundaryContainer img {
   border-radius: 100%;
 }
 @media screen and (max-width: 530px) {
-  main .secundaryContainer {
+  .secundaryContainer {
     width: 90%;
   }
 }
-main .walletTittleContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.walletTittleContainer {
   font-weight: 200;
   opacity: 0.5;
   margin: 3em;
@@ -209,7 +238,9 @@ main .walletTittleContainer {
   color: #fff;
   font-size: 2.2em;
 }
-main .gridContainer {
+
+/* Grid */
+.gridContainer {
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
@@ -225,18 +256,18 @@ main .gridContainer {
   gap: 30px 20px;
   /* Grid Media Queries */
 }
-main .gridContainer .gridItem .gridItemContent img {
+.gridContainer .gridItem .gridItemContent img {
   width: 40px;
   height: 40px;
   position: relative;
   top: 1em;
 }
 @media screen and (max-width: 1200px) {
-  main .gridContainer .gridItem .gridItemContent img {
+  .gridContainer .gridItem .gridItemContent img {
     display: none;
   }
 }
-main .gridContainer .gridItem .gridItemContent .gridItemContentTittle {
+.gridContainer .gridItem .gridItemContent .gridItemContentTittle {
   display: inline-block;
   font-size: 1em;
   width: 70%;
@@ -244,26 +275,26 @@ main .gridContainer .gridItem .gridItemContent .gridItemContentTittle {
   margin: 2em;
 }
 @media screen and (max-width: 1200px) {
-  main .gridContainer .gridItem .gridItemContent .gridItemContentTittle {
+  .gridContainer .gridItem .gridItemContent .gridItemContentTittle {
     margin: 1em auto;
   }
 }
-main .gridContainer .gridItem .gridItemContent .GridItemContentText {
+.gridContainer .gridItem .gridItemContent .GridItemContentText {
   width: 80%;
 }
 @media screen and (max-width: 1200px) {
-  main .gridContainer .gridItem .gridItemContent .GridItemContentText {
+  .gridContainer .gridItem .gridItemContent .GridItemContentText {
     text-align: center;
     margin: auto;
   }
 }
 @media screen and (max-width: 400px) {
-  main .gridContainer .gridItem .gridItemContent .GridItemContentText {
+  .gridContainer .gridItem .gridItemContent .GridItemContentText {
     width: 100%;
   }
 }
 @media screen and (max-width: 1200px) {
-  main .gridContainer {
+  .gridContainer {
     grid-template-columns: 100%;
     text-align: center;
     border-top: 1px solid #fff;
@@ -273,34 +304,50 @@ main .gridContainer .gridItem .gridItemContent .GridItemContentText {
 
 /* Main */
 /* Import Variables */
+.container-team, footer .footerContainer .footerContainerTwoLine, footer .footerContainer .footerContainerFirstLine, footer .footerContainer, footer, header nav, header nav .headerContainer, header nav .headerContainerList, header nav .headerContainerList ul, .contenedor, .secundaryContainer, .walletTittleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .btn {
+  padding: 0.6em 3em;
+  margin: 1em;
+  border-radius: 0.5em;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.fa-twitter, .fa-linkedin, .fa-reddit, .fa-instagram, .fa-github {
+  color: #2cbb69;
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+.fa-twitter:hover, .fa-linkedin:hover, .fa-reddit:hover, .fa-instagram:hover, .fa-github:hover {
+  cursor: pointer;
+  transition: 1.2s;
+  box-shadow: 0 0 2em 0.1em rgba(154, 255, 144, 0.377), 0 0 16em 0.1em #63ff55, 0 0 20em 0.1em rgba(57, 241, 41, 0.993);
+}
+
 /* Footer */
 footer {
   margin-top: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 footer .footerContainer {
-  display: flex;
   border-top: 1px solid #fff;
   width: 65%;
   padding: 1em;
-  align-items: center;
   color: #fff;
   justify-content: space-between;
   /* Footer Container Media Queries */
 }
 @media screen and (max-width: 900px) {
   footer .footerContainer {
-    display: var(--display);
-    justify-content: var(--align);
     flex-direction: column;
   }
-}
-footer .footerContainer .footerContainerFirstLine {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 footer .footerContainer .footerTittle {
   font-size: 1.2em;
@@ -308,7 +355,6 @@ footer .footerContainer .footerTittle {
   letter-spacing: 1px;
 }
 footer .footerContainer .footerContainerTwoLine {
-  display: flex;
   justify-content: space-evenly;
 }
 @media screen and (max-width: 900px) {
@@ -318,31 +364,9 @@ footer .footerContainer .footerContainerTwoLine {
 }
 
 /* Icons */
-.fa-twitter,
-.fa-linkedin,
-.fa-reddit,
-.fa-instagram,
-.fa-github {
-  color: #2cbb69;
-  margin: 0 1em;
-  font-size: 1.2em;
-}
-.fa-twitter:hover,
-.fa-linkedin:hover,
-.fa-reddit:hover,
-.fa-instagram:hover,
-.fa-github:hover {
-  cursor: pointer;
-  transition: 1.2s;
-  box-shadow: 0 0 2em 0.1em rgba(154, 255, 144, 0.377), 0 0 16em 0.1em #63ff55, 0 0 20em 0.1em rgba(57, 241, 41, 0.993);
-}
-
 /* Import Variables */
 /* Team Page */
 .container-team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 10em;
   width: 50%;
@@ -375,7 +399,7 @@ footer .footerContainer .footerContainerTwoLine {
 .container-team .containerTeamDisclaimer {
   border-top: 2px solid #2cbb69;
   border-bottom: 2px solid #2cbb69;
-  border-radius: 0em 2em/0em 2em;
+  border-radius: 0em 3em/0em 3em;
 }
 .container-team .containerTeamDisclaimer .containerTeamParagraph {
   margin-bottom: 2em;

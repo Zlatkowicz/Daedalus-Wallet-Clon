@@ -1,16 +1,15 @@
 /* Import Variables */
 @import '../base/variables';
+@import '../base/extend';
 /* Header */
 header {
     width: 100%;
     /* NavBar */
     nav {
-        display: $display;
-        justify-content: $align;
+        @extend %flex;
         .headerContainer {
-            display: $display;
+            @extend %flex;
             flex-direction: column;
-            align-items: $align;
             text-align: $align;
             .headerContainerTittle {
                 color: $color;
@@ -27,7 +26,7 @@ header {
             }
             .cardanoIcon {
                 margin-top: 2em;
-                animation: gitIcon 4s infinite;
+                animation: adaIcon 4s infinite;
                 border-radius: 100%;
             }
             @media screen and (max-width: 530px){
@@ -47,21 +46,18 @@ header {
 
         /* Header Container List */
         .headerContainerList {
-            display: $display;
+            @extend %flex;
             margin-top: 2em;
-            justify-content: $align;
             ul {
-                justify-content: $align;
-                align-items: $align;
+                @extend %flex;
                 flex-direction: row;
-                display: $display;
                 li:hover {
                     box-shadow: 0 0 2em .1em #10101d,
                         0 0 4em .1em #2a2a3d,
                         0 0 5em .1em #161622;
                     transition: .5s;
                     text-shadow: 0 0 1em rgb(99, 255, 85);
-                    transform: scaleY(1.2);
+                    @include transform(scaleY(1.2));
                 }
                 li a {
                     color: $color;
@@ -85,21 +81,21 @@ header {
         /* Header Container List End */
     }
     /* Animation */
-    @keyframes gitIcon {
+    @keyframes adaIcon {
         0% {
-            transform: rotate(0deg) translateX(0px);
+            @include transform(rotate(0deg) translateX(0px));
             box-shadow: 0 0 2em .1em rgba(99, 255, 85, 0.158),
             0 0 10em .1em rgba(99, 255, 85, 0.267),
             0 0 14em .1em rgba(99, 255, 85, 0.541);
         }
         50% {
-            transform: rotate(360deg) translateX(80px);
+            @include transform(rotate(360deg) translateX(80px));
             box-shadow: 0 0 2em .1em rgba(99, 255, 85, 0.158),
             0 0 12em .1em rgba(99, 255, 85, 0.582),
             0 0 16em .1em rgba(99, 255, 85, 0.781);
         }
         100% {
-            transform: rotate(-360deg) translateX(0px);
+            @include transform(rotate(-360deg) translateX(0px));
             box-shadow: 0 0 2em .1em rgba(154, 255, 144, 0.377),
             0 0 16em .1em rgb(99, 255, 85),
             0 0 20em .1em rgba(57, 241, 41, 0.993);

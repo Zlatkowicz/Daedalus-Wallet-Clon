@@ -1,29 +1,20 @@
 /* Import Variables */
+@import '../base/extend';
 @import '../base/variables';
 /* Main */
-main {
-    .contenedor {
-        display: $display;
-        flex-direction: column;
-        justify-content: $align;
-        align-items: $align;
-        color: $color;
-        text-align: $align;
+.contenedor {
+    @extend %flex;
+    color: $color;
+    text-align: $align;
+    flex-direction: column;
         .welcomeContainerTittle {
             font-size: 2.4em;
             letter-spacing: 2px;
             font-weight: 200;
         }
         .btn{
-            padding: .6em 3em;
-            margin: 1em;
-            border-radius: .5em;
-            border: none;
-            background-color: #2cbb69;
-            color: $color;
-            font-size: 1.2em;
-            font-weight: bold;
-            letter-spacing: 1px;
+            @extend %btn;
+            background-color: map-get($bg, bg-color-primary);
             &:hover {
                 cursor: pointer;
                 transition: 1.2s;
@@ -31,25 +22,23 @@ main {
             }
         }
         .buttonDownload:hover {
-            background-color: #2a2a49;
+            background-color: map-get($bg, bg-color-secundary);
         }
         .getSupport {
-            background-color: #2a2a49;
+            background-color: map-get($bg, bg-color-secundary);
             &:hover {
-                background-color: #2cbb69;
+                background-color: map-get($bg, bg-color-primary);
             }
         }
-    }
-    .secundaryContainer {
-        display:$display;
-        margin-top: 3em;
-        position: relative;
-        width: 65%;
-        padding: 3.5em;
-        background-color: #2b2b3b;
-        justify-content: $align;
-        flex-direction: column;
-        align-items: $align;
+}
+.secundaryContainer {
+    @extend %flex;
+    margin-top: 3em;
+    position: relative;
+    width: 65%;
+    padding: 3.5em;
+    background-color: map-get($bg, bg-color-tertiary);
+    flex-direction: column;
         .secundaryContainerTittle {
             font-size: 1.8em;
             font-weight: 200;
@@ -68,44 +57,42 @@ main {
         @media screen and (max-width: 530px){
             width: 90%;
         }
-    }
-    .walletTittleContainer {
-        display: $display;
-        justify-content: $align;
-        align-items: $align;
-        font-weight: 200;
-        opacity: .5;
-        margin: 3em;
-        text-align: $align;
-        letter-spacing: 1px;
-        color: $color;
-        font-size: 2.2em;
-    }
+}
+.walletTittleContainer {
+    @extend %flex;
+    font-weight: 200;
+    opacity: .5;
+    margin: 3em;
+    text-align: $align;
+    letter-spacing: 1px;
+    color: $color;
+    font-size: 2.2em;
+}
     /* Grid */
-    .gridContainer {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        text-align: $align;
-        grid-template-rows: auto auto;
-        text-align: left;
-        padding: 2em;
-        width: 65%;
-        color: $color;
-        margin: auto;
-        background-image: url(../img/rune.svg);
-        background-size: cover;
-        background-position: $align;
-        gap: 30px 20px; 
-        .gridItem {
-            .gridItemContent {
-                img {
-                    width: 40px;
-                    height: 40px;
-                    position: relative;
-                    top: 1em;
-                    @media screen and (max-width: 1200px) {
-                        display: none;
-                    }
+.gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: $align;
+    grid-template-rows: auto auto;
+    text-align: left;
+    padding: 2em;
+    width: 65%;
+    color: $color;
+    margin: auto;
+    background-image: url(../img/rune.svg);
+    background-size: cover;
+    background-position: $align;
+    gap: 30px 20px; 
+    .gridItem {
+        .gridItemContent {
+            img {
+                width: 40px;
+                height: 40px;
+                position: relative;
+                top: 1em;
+                @media screen and (max-width: 1200px) {
+                    display: none;
+                }
                 }
                 .gridItemContentTittle {
                     display: inline-block;
@@ -130,12 +117,11 @@ main {
             }
         }
         /* Grid Media Queries */
-        @media screen and (max-width:1200px){
-            grid-template-columns: 100%;
-            text-align: $align;
-            border-top: 1px solid $color;
-            border-bottom: 1px solid $color;
-        }
+    @media screen and (max-width:1200px){
+        grid-template-columns: 100%;
+        text-align: $align;
+        border-top: 1px solid $color;
+        border-bottom: 1px solid $color;
     }
 }
 /* Main */

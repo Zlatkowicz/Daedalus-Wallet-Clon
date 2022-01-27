@@ -2,9 +2,7 @@
 @import '../base/variables';
 /* Team Page */
 .container-team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     flex-direction: column;
     margin-top: 10em;
     width: 50%;
@@ -13,11 +11,11 @@
         img {
             height: 150px;
             width: 150px;
-            outline: 2px solid #2cbb69;
+            outline: 2px solid map-get($bg, bg-color-primary);
             border-radius: 50%;
         }
         .containerTeamTittle {
-            color: #2cbb69;
+            color: map-get($bg, bg-color-primary);
         }
         .containerTeamSpan {
             display: block;
@@ -32,9 +30,9 @@
         width: 100%;
     }
     .containerTeamDisclaimer {
-        border-top: 2px solid #2cbb69;
-        border-bottom: 2px solid #2cbb69;
-        border-radius: 0em 2em / 0em 2em;
+        border-top: 2px solid map-get($bg, bg-color-primary);
+        border-bottom: 2px solid map-get($bg, bg-color-primary);
+        border-radius: 0em 3em / 0em 3em;
         .containerTeamParagraph {
             margin-bottom: 2em;
         }
