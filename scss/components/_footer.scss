@@ -9,9 +9,9 @@ footer {
         @extend %flex;
         border-top: 1px solid $color;
         width: 65%;
-        padding: 1em;
+        padding: 1em; 
         color: $color;
-        justify-content: space-between;
+        @include justify(justify-content(space-between));
 
         /* Footer Container Media Queries */
         @media screen and (max-width: 900px) {
@@ -28,7 +28,7 @@ footer {
         }
         .footerContainerTwoLine  {
             @extend %flex;
-            justify-content: space-evenly;
+            @include justify(justify-content(space-evenly));
             @media screen and (max-width: 900px) {
                 margin: 2em 0;
             }

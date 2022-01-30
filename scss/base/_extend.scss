@@ -32,3 +32,6 @@
     -moz-transform: $value;
     -ms-transform: $value;
 }
+@mixin justify ($just) {
+    justify-content: $just;
+}
