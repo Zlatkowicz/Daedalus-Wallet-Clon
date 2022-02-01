@@ -1,8 +1,8 @@
-%flex {
+/* %flex {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 %btn {
     padding: 0.6em 3em;
     margin: 1em;
@@ -32,6 +32,8 @@
     -moz-transform: $value;
     -ms-transform: $value;
 }
-@mixin justify ($just) {
+@mixin flex ($just) {
+    display: flex;
+    align-items: center;
     justify-content: $just;
 }

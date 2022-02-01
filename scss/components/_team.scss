@@ -2,7 +2,7 @@
 @import '../base/variables';
 /* Team Page */
 .container-team {
-    @extend %flex;
+    @include flex(center);
     flex-direction: column;
     margin-top: 10em;
     width: 50%;

@@ -3,7 +3,7 @@
 @import '../base/variables';
 /* Main */
 .contenedor {
-    @extend %flex;
+    @include flex(center);
     color: $color;
     text-align: $align;
     flex-direction: column;
@@ -32,7 +32,7 @@
         }
 }
 .secundaryContainer {
-    @extend %flex;
+    @include flex(center);
     margin-top: 3em;
     position: relative;
     width: 65%;
@@ -59,7 +59,7 @@
         }
 }
 .walletTittleContainer {
-    @extend %flex;
+    @include flex(center);
     font-weight: 200;
     opacity: .5;
     margin: 3em;

@@ -27,12 +27,11 @@ ul {
 
 /* Components */
 /* Import Variables */
-.container-team, footer .footerContainer .footerContainerTwoLine, footer .footerContainer .footerContainerFirstLine, footer .footerContainer, footer, .walletTittleContainer, .secundaryContainer, .contenedor, header nav .headerContainerList ul, header nav .headerContainerList, header nav .headerContainer, header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* %flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .contenedor .btn {
   padding: 0.6em 3em;
   margin: 1em;
@@ -62,10 +61,16 @@ header {
   /* Animation */
 }
 header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* Header Container List */
   /* Header Container List End */
 }
 header nav .headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
 }
@@ -101,9 +106,15 @@ header nav .headerContainer .cardanoIcon {
   }
 }
 header nav .headerContainerList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 2em;
 }
 header nav .headerContainerList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 header nav .headerContainerList ul li:hover {
@@ -161,12 +172,11 @@ header nav .headerContainerList ul li a::after {
 }
 
 /* Import Variables */
-.container-team, footer .footerContainer .footerContainerTwoLine, footer .footerContainer .footerContainerFirstLine, footer .footerContainer, footer, .walletTittleContainer, .secundaryContainer, .contenedor, header nav, header nav .headerContainer, header nav .headerContainerList, header nav .headerContainerList ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* %flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .contenedor .btn {
   padding: 0.6em 3em;
   margin: 1em;
@@ -191,6 +201,9 @@ header nav .headerContainerList ul li a::after {
 
 /* Main */
 .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   text-align: center;
   flex-direction: column;
@@ -219,6 +232,9 @@ header nav .headerContainerList ul li a::after {
 }
 
 .secundaryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 3em;
   position: relative;
   width: 65%;
@@ -246,6 +262,9 @@ header nav .headerContainerList ul li a::after {
 }
 
 .walletTittleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 200;
   opacity: 0.5;
   margin: 3em;
@@ -320,12 +339,11 @@ header nav .headerContainerList ul li a::after {
 
 /* Main */
 /* Import Variables */
-.container-team, footer .footerContainer .footerContainerTwoLine, footer .footerContainer .footerContainerFirstLine, footer .footerContainer, footer, header nav, header nav .headerContainer, header nav .headerContainerList, header nav .headerContainerList ul, .contenedor, .secundaryContainer, .walletTittleContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* %flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .contenedor .btn {
   padding: 0.6em 3em;
   margin: 1em;
@@ -351,19 +369,32 @@ header nav .headerContainerList ul li a::after {
 /* Footer */
 footer {
   margin-top: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .footerContainer {
   border-top: 1px solid #fff;
   width: 65%;
   padding: 1em;
   color: #fff;
-  justify-content: justify-content(space-between);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* Footer Container Media Queries */
 }
 @media screen and (max-width: 900px) {
   footer .footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
+}
+footer .footerContainer .footerContainerFirstLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .footerContainer .footerTittle {
   font-size: 1.2em;
@@ -371,7 +402,12 @@ footer .footerContainer .footerTittle {
   letter-spacing: 1px;
 }
 footer .footerContainer .footerContainerTwoLine {
-  justify-content: justify-content(space-evenly);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 @media screen and (max-width: 900px) {
   footer .footerContainer .footerContainerTwoLine {
@@ -383,6 +419,9 @@ footer .footerContainer .footerContainerTwoLine {
 /* Import Variables */
 /* Team Page */
 .container-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin-top: 10em;
   width: 50%;

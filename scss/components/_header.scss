@@ -6,9 +6,9 @@ header {
     width: 100%;
     /* NavBar */
     nav {
-        @extend %flex;
+        @include flex(center);
         .headerContainer {
-            @extend %flex;
+            @include flex(center);
             flex-direction: column;
             text-align: $align;
             .headerContainerTittle {
@@ -46,10 +46,10 @@ header {
 
         /* Header Container List */
         .headerContainerList {
-            @extend %flex;
+            @include flex(center);
             margin-top: 2em;
             ul {
-                @extend %flex;
+                @include flex(center);
                 flex-direction: row;
                 li:hover {
                     box-shadow: 0 0 2em .1em #10101d,

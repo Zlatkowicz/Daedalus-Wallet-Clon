@@ -4,22 +4,21 @@
 /* Footer */
 footer {
     margin-top: 10em;
-    @extend %flex;
+    @include flex(center);
     .footerContainer {
-        @extend %flex;
         border-top: 1px solid $color;
         width: 65%;
         padding: 1em; 
         color: $color;
-        @include justify(justify-content(space-between));
+        @include flex(space-between);
 
         /* Footer Container Media Queries */
         @media screen and (max-width: 900px) {
-            @extend %flex;
+            @include flex(center);
             flex-direction: column;
         }
         .footerContainerFirstLine {
-            @extend %flex;
+            @include flex(center);
         }
         .footerTittle {
             font-size: 1.2em;
@@ -27,8 +26,8 @@ footer {
             letter-spacing: 1px;
         }
         .footerContainerTwoLine  {
-            @extend %flex;
-            @include justify(justify-content(space-evenly));
+            @include flex(center);
+            @include flex(space-evenly);
             @media screen and (max-width: 900px) {
                 margin: 2em 0;
             }
