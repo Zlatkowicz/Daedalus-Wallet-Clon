@@ -1,6 +1,6 @@
 /* Import Variables */
-@import '../base/extend';
 @import '../base/variables';
+@import '../base/extend';
 /* Main */
 .contenedor {
     @include flex(center);

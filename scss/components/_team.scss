@@ -1,5 +1,6 @@
 /* Import Variables */
 @import '../base/variables';
+@import '../base/extend';
 /* Team Page */
 .container-team {
     @include flex(center);

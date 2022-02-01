@@ -417,6 +417,33 @@ footer .footerContainer .footerContainerTwoLine {
 
 /* Icons */
 /* Import Variables */
+/* %flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.contenedor .btn {
+  padding: 0.6em 3em;
+  margin: 1em;
+  border-radius: 0.5em;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.fa-twitter, .fa-linkedin, .fa-reddit, .fa-instagram, .fa-github {
+  color: #2cbb69;
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+.fa-twitter:hover, .fa-linkedin:hover, .fa-reddit:hover, .fa-instagram:hover, .fa-github:hover {
+  cursor: pointer;
+  transition: 1.2s;
+  box-shadow: 0 0 2em 0.1em rgba(154, 255, 144, 0.377), 0 0 16em 0.1em #63ff55, 0 0 20em 0.1em rgba(57, 241, 41, 0.993);
+}
+
 /* Team Page */
 .container-team {
   display: flex;
