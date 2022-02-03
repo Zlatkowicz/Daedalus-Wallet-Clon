@@ -17,6 +17,8 @@
         }
         .containerTeamTittle {
             color: map-get($bg, bg-color-primary);
+            font-size: 2em;
+            margin: .4em 0;
         }
         .containerTeamSpan {
             display: block;

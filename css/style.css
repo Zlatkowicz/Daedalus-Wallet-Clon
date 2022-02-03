@@ -464,6 +464,8 @@ footer .footerContainer .footerContainerTwoLine {
 }
 .container-team .containerTeamRow .containerTeamTittle {
   color: #2cbb69;
+  font-size: 2em;
+  margin: 0.4em 0;
 }
 .container-team .containerTeamRow .containerTeamSpan {
   display: block;
