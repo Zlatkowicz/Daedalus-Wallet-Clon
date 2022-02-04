@@ -1,7 +1,7 @@
 {
   "name": "daedalus-wallet-clon",
   "version": "1.0.0",
-  "description": "",
+  "description": "The extensible open source cryptocurrency wallet, built to grow with the community. Daedalus Wallet Clone es un clon de una billetera virtual utilizada para almacenar ADA, la cual se llama Daedalus Wallet.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
