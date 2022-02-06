@@ -1,5 +1,6 @@
 package-lock.json
 package.json
+js/
 # Logs
 logs
 *.log
